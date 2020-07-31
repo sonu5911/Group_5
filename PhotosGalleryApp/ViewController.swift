@@ -100,7 +100,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 print(fetchResult.count)
                 if fetchResult.count > 0 {
                     for i in 0..<fetchResult.count{
-                        imgManager.requestImage(for: fetchResult.object(at: i) as PHAsset, targetSize: CGSize(width:500, height: 500),contentMode: .aspectFill, options: requestOptions, resultHandler: { (image, error) in
+                        imgManager.requestImage(for: fetchResult.object(at: i) as PHAsset, targetSize: CGSize(width:600, height: 600),contentMode: .aspectFill, options: requestOptions, resultHandler: { (image, error) in
                             self.imageArray.append(image!)
                         })
                     }
